@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="logo" class="img-fluid"> <!-- Делает логотип адаптивным -->
+            <div class="wrapper-inner d-flex flex-column flex-md-row align-items-center">
+                <!-- Flexbox для выравнивания -->
+                <div class="offer">
+                    <h1 class="offer_title">С помощью нас вы сможете получить то, о чем</h1>
+                    <span class="offer_span">желаете!</span>
+                    <p class="offer_p">Что-то там написано, но я не могу разобрать из-за слишком плохого качества
+                        картинки, поэтому пусть будет так</p>
+                    <a href="#" class="btn btn-primary">Узнать больше...</a>
+                </div>
+                <img class="img1" src="img/header-img.png" alt="header-img" class="img-fluid">
+                <!-- Делает изображение адаптивным -->
+            </div>
+        </div>
+    </header>
+
+    <div class="block">
+        <div class="container">
+            <h2 class="block_h2 animate__animated animate__bounceInDown">Что Вам необходимо?</h2>
+            <div class="row"> <!-- Используем Bootstrap row -->
+                <div class="col-12 col-md-4"> <!-- Используем Bootstrap колонки -->
+                    <div class="block123">
+                        <img class="img_block animate__animated animate__heartBeat img-fluid" src="img/f3.png" alt="f3">
+                        <h3 class="block_h3">Первый блок</h3>
+                        <p class="block_p">ля-ля-ля-ля-ля-ля-ля-ля-ля-ял-ля-ля-ля-ля-ля</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="block123">
+                        <img class="img_block animate__animated animate__heartBeat img-fluid" src="img/f4.png" alt="f4">
+                        <h3 class="block_h3">Второй блок</h3>
+                        <p class="block_p">ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ла-ал-ла-ла</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="block123">
+                        <img class="img_block animate__animated animate__heartBeat img-fluid" src="img/f5.png" alt="f5">
+                        <h3 class="block_h3">Третий блок</h3>
+                        <p class="block_p">бла-бла-бла-бла-бла-бла-бла-бла-бла-бла</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="container">
+            <div class="form_blocks">
+                <form id="orderForm" novalidate>
+                    <label class="form_label" for="name_usluga">Когда привезти ваши булочки?</label>
+                    <input class="form-control" type="text" name="name_usluga" id="name_usluga" placeholder="Имя">
+                    <input class="form-control" type="text" name="familia_usluga" id="familia_usluga" placeholder="Фамилия">
+                    <input class="form-control" type="email" name="email_usluga" id="email_usluga" placeholder="Petrov@gmail.com">
+                    <input class="form-control" type="text" name="bulochka_usluga" id="bulochka_usluga" placeholder="название булочки из меню">
+                    <input class="form-control" type="number" name="kolvo_usluga" id="kolvo_usluga" placeholder="Количество" min="1">
+                    <input class="form-control" type="date" name="date_usluga" id="date_usluga" title="Выберите дату доставки">
+                    <input class="form-control" type="time" name="time_usluga" id="time_usluga" title="Выберите время доставки">
+                    <button class="btn btn-primary" type="submit">Отправить</button>
+                </form>
+                <div id="responseMessage" style="margin-top: 20px; font-weight: bold;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="container">
+            <div class="form_blocks">
+                <form action="#" onsubmit="handleCallbackSubmit(event)">
+                    <label class="form_label" for="Name">Форма заказа обратного звонка</label>
+                    <input class="form-control" type="text" name="name" id="Name" placeholder="Имя" required>
+                    <input class="form-control" type="email" name="email" id="e-mail" placeholder="Введите свой e-mail"
+                        required>
+                    <input class="form-control" type="tel" name="phone" id="tel" placeholder="Телефон" required
+                        pattern="\+?[0-9 ]{7,15}">
+                    <input class="form-control" type="text" name="topic" id="tema"
+                        placeholder="Какая тема Вас интересует?" required>
+                    <button class="btn btn-primary" type="submit">Отправить вопрос!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <p>© Все на этом сайте защищено</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+.header {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(163deg, rgba(0, 212, 255, 1) 0%, rgba(34, 105, 202, 1) 100%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.offer {
+    width: 550px;
+}
+
+.offer_title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.offer_span {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.offer_p {
+    font-size: 16px;
+}
+
+.btn {
+    display: block;
+    width: 220px;
+    height: 50px;
+    background-color: rgb(255, 225, 27);
+    font-weight: bold;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    animation-name: example_a;
+    animation-duration: 2s;
+}
+
+@keyframes example_a
+{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: yellow;
+    }
+
+
+}
+
+.img1 {
+    width: 350px;
+    animation-name: example_img;
+    animation-duration: 5s;
+}
+
+@keyframes example_img{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 350px;
+    }
+
+}
+
+.block {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.block_h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.numbers_block {
+    display: flex;
+    justify-content: center;
+}
+
+.block123 {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.img_block {
+    width: 50px;
+}
+
+.img_ball {
+    width: 60px;
+}
+
+.block_h3 {
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.block_p {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы в колонку */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    text-align: center; /* Центрируем текст внутри блока */
+    margin: 20px; /* Добавьте нужное расстояние между блоками */
+    color: gray;
+}
+
+.form {
+    background-color: hwb(180 92% 4%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form_blocks {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_lable {
+    display: block;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: block;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    width: 250px;
+}
+
+.inputs:hover{
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+.btn2 {
+    display: block;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 275px;
+    background-color: rgb(255, 225, 27);
+}
+
+.btn2:hover{
+    background-color: aqua;
+    font-size: 20px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.footer {
+    background: rgb(87, 125, 177);
+    background: linear-gradient(180deg, rgba(87, 125, 177, 1) 4%, rgba(44, 168, 215, 1) 35%, rgba(50, 162, 210, 1) 47%, rgba(0, 212, 255, 1) 72%);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    font-size: 10px;
+}

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "лр4",
+			"path": ".."
+		},
+		{
+			"path": "../../VS ЛР 2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "лр4"
+	}
+}
